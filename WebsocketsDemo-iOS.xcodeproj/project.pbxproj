@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		4F61B4B71E67A689005FB11F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61B4B61E67A689005FB11F /* AppDelegate.swift */; };
-		4F61B4B91E67A689005FB11F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61B4B81E67A689005FB11F /* ViewController.swift */; };
+		4F61B4B91E67A689005FB11F /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61B4B81E67A689005FB11F /* UsersViewController.swift */; };
 		4F61B4BC1E67A689005FB11F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F61B4BA1E67A689005FB11F /* Main.storyboard */; };
 		4F61B4BE1E67A689005FB11F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F61B4BD1E67A689005FB11F /* Assets.xcassets */; };
 		4F61B4C11E67A689005FB11F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F61B4BF1E67A689005FB11F /* LaunchScreen.storyboard */; };
+		4F61B4C91E67A919005FB11F /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61B4C81E67A919005FB11F /* SocketIOManager.swift */; };
+		4F6A669B1E6A3067001547E8 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6A669A1E6A3067001547E8 /* UserCell.swift */; };
+		C7BEE5D8AEFE375470EEF197 /* Pods_WebsocketsDemo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F39772EA018174E850C3C51 /* Pods_WebsocketsDemo_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F61B4B31E67A689005FB11F /* WebsocketsDemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebsocketsDemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F61B4B61E67A689005FB11F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F61B4B81E67A689005FB11F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F61B4B81E67A689005FB11F /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		4F61B4BB1E67A689005FB11F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F61B4BD1E67A689005FB11F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F61B4C01E67A689005FB11F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F61B4C21E67A689005FB11F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F61B4C81E67A919005FB11F /* SocketIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		4F6A669A1E6A3067001547E8 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		9F39772EA018174E850C3C51 /* Pods_WebsocketsDemo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebsocketsDemo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2BF3B6336F2079B5AD7529 /* Pods-WebsocketsDemo-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebsocketsDemo-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebsocketsDemo-iOS/Pods-WebsocketsDemo-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E38546B5504AC5A12B5B53C0 /* Pods-WebsocketsDemo-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebsocketsDemo-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebsocketsDemo-iOS/Pods-WebsocketsDemo-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7BEE5D8AEFE375470EEF197 /* Pods_WebsocketsDemo_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4740D249CA96831E1B27012D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F39772EA018174E850C3C51 /* Pods_WebsocketsDemo_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4F61B4AA1E67A689005FB11F = {
 			isa = PBXGroup;
 			children = (
 				4F61B4B51E67A689005FB11F /* WebsocketsDemo-iOS */,
 				4F61B4B41E67A689005FB11F /* Products */,
+				5F238C43B11C95529CFE7D96 /* Pods */,
+				4740D249CA96831E1B27012D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +74,24 @@
 			isa = PBXGroup;
 			children = (
 				4F61B4B61E67A689005FB11F /* AppDelegate.swift */,
-				4F61B4B81E67A689005FB11F /* ViewController.swift */,
+				4F61B4B81E67A689005FB11F /* UsersViewController.swift */,
 				4F61B4BA1E67A689005FB11F /* Main.storyboard */,
 				4F61B4BD1E67A689005FB11F /* Assets.xcassets */,
 				4F61B4BF1E67A689005FB11F /* LaunchScreen.storyboard */,
 				4F61B4C21E67A689005FB11F /* Info.plist */,
+				4F61B4C81E67A919005FB11F /* SocketIOManager.swift */,
+				4F6A669A1E6A3067001547E8 /* UserCell.swift */,
 			);
 			path = "WebsocketsDemo-iOS";
+			sourceTree = "<group>";
+		};
+		5F238C43B11C95529CFE7D96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA2BF3B6336F2079B5AD7529 /* Pods-WebsocketsDemo-iOS.debug.xcconfig */,
+				E38546B5504AC5A12B5B53C0 /* Pods-WebsocketsDemo-iOS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F61B4C51E67A689005FB11F /* Build configuration list for PBXNativeTarget "WebsocketsDemo-iOS" */;
 			buildPhases = (
+				80B24B643ABF2680AC57CFB4 /* [CP] Check Pods Manifest.lock */,
 				4F61B4AF1E67A689005FB11F /* Sources */,
 				4F61B4B01E67A689005FB11F /* Frameworks */,
 				4F61B4B11E67A689005FB11F /* Resources */,
+				9F2E2D582B7B68324E49382F /* [CP] Embed Pods Frameworks */,
+				094D6361734B33DC6ABA369D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +164,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		094D6361734B33DC6ABA369D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebsocketsDemo-iOS/Pods-WebsocketsDemo-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80B24B643ABF2680AC57CFB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F2E2D582B7B68324E49382F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebsocketsDemo-iOS/Pods-WebsocketsDemo-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F61B4AF1E67A689005FB11F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F61B4B91E67A689005FB11F /* ViewController.swift in Sources */,
+				4F6A669B1E6A3067001547E8 /* UserCell.swift in Sources */,
+				4F61B4B91E67A689005FB11F /* UsersViewController.swift in Sources */,
+				4F61B4C91E67A919005FB11F /* SocketIOManager.swift in Sources */,
 				4F61B4B71E67A689005FB11F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +341,7 @@
 		};
 		4F61B4C61E67A689005FB11F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA2BF3B6336F2079B5AD7529 /* Pods-WebsocketsDemo-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "WebsocketsDemo-iOS/Info.plist";
@@ -270,6 +354,7 @@
 		};
 		4F61B4C71E67A689005FB11F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E38546B5504AC5A12B5B53C0 /* Pods-WebsocketsDemo-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "WebsocketsDemo-iOS/Info.plist";
@@ -299,6 +384,7 @@
 				4F61B4C71E67A689005FB11F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
